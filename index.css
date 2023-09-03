@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Cattino;
+  src: url(Cattino.ttf);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("cats.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding: 0 16px;
+}
+
+h1,
+h2 {
+  font-family: Cattino, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+button {
+  box-sizing: border-box;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: rgb(243, 237, 244);
+  font-weight: bold;
+  width: 200px;
+  margin: 8px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#increment-btn {
+  background: hsl(44, 100%, 43%);
+}
+
+#save-btn {
+  background: hsl(90, 54%, 43%);
+}
+
+#save-el {
+  background: hsl(263, 10%, 84%);
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 450px) {
+  button {
+    width: 100%;
+    margin: 0 16px;
+  }
+  .wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
