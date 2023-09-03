@@ -13,7 +13,7 @@ body {
   background-position: center 10%;
   height: 100vh;
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
 }
@@ -72,12 +72,13 @@ button:hover {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   button {
     width: 100%;
     margin: 0 16px;
   }
   .wrapper {
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
